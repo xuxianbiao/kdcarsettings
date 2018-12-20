@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shoots_bg_03"
+    android:orientation="vertical"
+    android:id="@+id/bgview"
+     >
+
+    <TextView
+        android:id="@+id/toptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/time_set"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+    
+		<LinearLayout
+		    android:id="@+id/timePicker1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:layout_marginTop="10dp"
+			android:background="@drawable/shoots_settime_bg"
+			android:orientation="horizontal" >		
+		   <com.kandi.settings.widgets.SetDate_WheelView
+		       android:id="@+id/year"
+		       android:layout_width="wrap_content"
+		       android:layout_weight="1"
+		       android:layout_height="wrap_content" />
+		
+		   <com.kandi.settings.widgets.SetDate_WheelView
+		       android:id="@+id/month"
+		       android:layout_width="wrap_content"
+		       android:layout_weight="1"
+		       android:layout_height="wrap_content" />
+		
+		   <com.kandi.settings.widgets.SetDate_WheelView
+		       android:id="@+id/day"
+		       android:layout_width="wrap_content"
+		       android:layout_weight="1"
+		       android:layout_height="wrap_content" />
+		   
+		   <com.kandi.settings.widgets.SetDate_WheelView
+		       android:id="@+id/hour"
+		       android:layout_width="wrap_content"
+		       android:layout_weight="1"
+		       android:layout_height="wrap_content" />
+		   
+		   <com.kandi.settings.widgets.SetDate_WheelView
+		       android:id="@+id/min"
+		       android:layout_width="wrap_content"
+		       android:layout_weight="1"
+		       android:layout_height="wrap_content" />
+		</LinearLayout>
+
+    <Button
+        android:id="@+id/timeset_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/submit_btn_selector"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:text="@string/password_wifi_confirm" />
+
+</LinearLayout>

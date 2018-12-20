@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="white">#FFFFFF</color>
+        
+        <color name="grey">#505050</color>
+        
+        <color name="darkgrey">#ffa0a0a0</color>
+        
+        <color name="grey3">#C0C0C0</color>
+        <color name="scene_dark_blue">#1B7181</color>
+        
+        <color name="scene_light_gray">#CCCCCC</color>
+        <color name="actionbar_white">#FFFFFFFF</color>
+	    <color name="actionbar_black">#FF000000</color>
+	    <color name="outline_background">#BB000000</color>
+	    <color name="about_white">#ffbfbfbf</color>
+	    <color name="about_blue">#00dcfd</color>
+	    <color name="about_bg_blue">#FF00FFFF</color>
+	    <color name="about_bg_transparent">#00000000</color>
+</resources>

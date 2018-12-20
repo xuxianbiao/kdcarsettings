@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gotopageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shoots_bg_02_1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:baselineAligned="true"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/pageNumberTextEdit"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/set_edittext_bg"
+                android:textColor="@color/actionbar_white"
+                android:textSize="20sp"
+                android:minEms="4" />
+
+            <Button
+                android:id="@+id/goToButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_goto_page"
+                android:textColor="@color/actionbar_white"
+                android:textSize="23sp"
+                android:background="@drawable/btn_small_selector" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
+            android:progressDrawable="@drawable/seekbar_v_background"
+            android:thumb="@drawable/thumb_v" />
+    </LinearLayout>
+
+</RelativeLayout>

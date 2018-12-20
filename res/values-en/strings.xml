@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KdCarSettings</string>
+    <string name="version_code">K22_KandiSetting_Ver20180511</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- 一键服务所需文案 -->
+    <string name="onekeynum">4006070000</string>
+    <string name="hotlinenum">Hotline: 400-607-0000</string>
+    <string name="hotlinename">SHL: </string>
+    <string name="unhotline">Current service unavailable</string>
+    <string name="onekeyrealnum">4006070000</string>
+    <string name="sim_unin">No SIM cards inserted</string>
+    <string name="umsimorsignal">No SIM cards or no signals</string>
+    <string name="othering">Other person is on the phone</string>
+    <string name="disconnect">Cannot connect</string>
+    <string name="noanswer">No answer</string>
+    <string name="arrearage">Service suspended due to insufficient balance</string>
+    <string name="callingtime">Call Time：</string>
+    <string name="calling">Calling...</string>
+    <string name="call_end">Call End</string>
+    <string name="life_service">Life Services</string>
+    <string name="life_service_tip">Book hotels, find hotels and book flights</string>
+    <string name="call_service">E-call</string>
+    <string name="call_service_tip">Help me: 110, 120 and 119</string>
+    <string name="car_service">Vehicle rescue</string>
+    <string name="car_service_tip">Vehicle breakdown maintenance, safety maintenance</string>
+    <string name="takecar_service">Towing service</string>
+    <string name="takecar_service_tip">Vehicle malfunction or dragged back to the service area due to power-off</string>
+    <string name="car_setting">Vehicle Settings</string>
+    <string name="system_setting">System Settings</string>
+    <string name="manager_setting">Admin Settings</string>
+    <string name="about">About</string>
+    <string name="about_driver">Ser Driver Version:</string>
+    <string name="about_ecoc">ECOC System Version:</string>
+    <string name="about_systemui">SystemUI Version:</string>
+    <string name="about_carsetting">CarSetting Version:</string>
+    <string name="about_pdf_instruction">System Specification</string>
+    <string name="about_home">Home Version:</string>
+    <string name="about_ringcall">RingCall Version:</string>
+    <string name="about_bluetooth">Bluetooth Version:</string>
+    <string name="about_carvin">Vehicle Frame No:</string>
+    <string name="about_os">Os Version:</string>
+    <string name="about_hardversion">Hardware Version:</string>
+    <string name="about_hardprop">sys.kd.hardwareversion</string>
+    <string name="about_v1_5">VWCSY001_VER1.5</string>
+    <string name="about_v1_4">VWCSY001_VER1.4</string>
+    <string name="about_QYv1_5">TEST-KDV</string>
+    <string name="about_QYv1_4">vwcsy001_M_v1_4</string>
+    <string name="about_softversion">Software Version:</string>
+    <string name="about_softprop">sys.kd.softversion</string>
+    <string name="is_recovery">Whether to restore factory settings or not</string>
+    <string name="about_content">Disclaimer: Before using the KANDI electric vehicle (hereinafter referred to as KANDI), please be sure to read this statement carefully and understand it thoroughly. You may choose not to use KANDI. But if you use KANDI, your use will be deemed as an endorsement of the entire content of this statement.</string>
+
+    <string name="wifipass_dialog_inputpass">Enter Password</string>
+    <string name="wifipass_dialog_pass">Password</string>
+    
+    <string name="ok">Confirm</string>
+    <string name="cancle">Cancel</string>
+    
+    <string name="out_battery_">Discharge Parameter:</string>
+    <string name="in_battery_">Charging Parameters:</string>
+    <string name="protect_">Protection for Parameter:</string>
+
+    <!-- 充电参数 -->
+    <string name="bcu_charger_lowtemp">CCT</string>
+    <string name="bcu_charger_lowcell">CCUV</string>
+    <string name="bcu_charger_lowcurr">CCC</string>
+    <string name="bcu_charger_normaltemp">CNT</string>
+    <string name="bcu_charger_normalcell">CNTUV</string>
+    <string name="bcu_charger_normalcurr">CNTC</string>
+    <string name="bcu_charger_hightemp">CHT</string>
+    <string name="bcu_charger_highcell">CHTUV</string>
+    <string name="bcu_charger_highcurr">CHTC</string>
+    <!-- 保护参数 -->
+    <string name="bcu_reduce_cell">CRV</string>
+    <string name="bcu_charger_stopvol">CSTP</string>
+    <string name="bcu_charger_stoptemp">CST</string>
+    <string name="bcu_charger_stopcurr">CSC</string>
+    <string name="bcu_charger_stopcellvol">CSUV</string>
+    <string name="bcu_reduce_time">CRDT</string>
+    <!-- 放电参数 -->
+    <string name="bcu_discharger_lowtemp">DCT</string>
+    <string name="bcu_discharger_lowcellw">DACU</string>
+    <string name="bcu_discharger_lowcelle">DFCU</string>
+    <string name="bcu_discharger_normaltemp">DNT</string>
+    <string name="bcu_discharger_normalcellw">DANTU</string>
+    <string name="bcu_discharger_normalcelle">DFNTU</string>
+    <string name="bcu_discharger_hightemp">DHT</string>
+    <string name="bcu_discharger_highcellw">DAHTU</string>
+    <string name="bcu_discharger_highcelle">DFHTU</string>
+
+    <!-- 放电参数 -->
+    <string name="bcu_lowtemp_warring_cell">DCAUV</string>
+    <string name="bcu_lowtemp_error_cell">DCFUV</string>
+    <string name="bcu_normaltemp_warring_cell">DNTAUV</string>
+    <string name="bcu_normaltemp_error_cell">DNTFUV</string>
+    <string name="bcu_hightemp_warring_cell">DHTAUV</string>
+    <string name="bcu_hightemp_error_cell">DHTFUV</string>
+
+    <!-- 充电机界面按钮字符定义 -->
+    <string name="charger_high_outvoltage">CMOV</string>
+    <string name="charger_high_outcurrent">CMOC</string>
+    <string name="charger_balance_enable">CBE</string>
+    <string name="charger_para_save">PS</string>
+
+    <!-- BCU字符串定义 -->
+    <string name="bcu_rtc_enable">MCRTCE</string>
+    <string name="bcu_rtc_enable_can">MCRTCMCANE</string>
+    <string name="bcu_balance_enable">bcu-BE</string>
+    <string name="bcu_auto_checkloop">MCACLC</string>
+    <string name="bcu_clear_relay">RAR</string>
+    <string name="bcu_relay_check_time">CRADC</string>
+    <string name="bcu_loop_mode">CLT</string>
+    <string name="bcu_min_battery">Min.BN</string>
+    <string name="bcu_leak_warring">IA</string>
+    <string name="bcu_leak_error">IF</string>
+    <!-- togglebotton 字符定义 -->
+    <string name="toggle_on">ON</string>
+    <string name="toggle_off">OFF</string>
+    <!-- 协议使能 -->
+    <string name="protocol_dayou">DEVONP</string>
+    <string name="protocol_wanxiang">WXP</string>
+    <string name="protocol_kangdi">Kandi P</string>
+
+    <!-- 电机控制器界面按钮字符定义 -->
+    <string name="motor_high_speed">Max. Speed</string>
+    <string name="motor_high_nm">Max. Torque</string>
+
+    <!-- 升级界面字符定义 -->
+    <string name="updata_start">Start Upgrade</string>
+    <string name="updata_stop">Stop Upgrade</string>
+    <string name="updata_file">Upgrade File</string>
+    <string name="vendor_info">MI</string>
+    <string name="hard_info">HWV</string>
+    <string name="soft_info">SWV</string>
+    <string name="up_status">Upgrade Status</string>
+    <string name="up_process">Upgrade progress</string>
+    <string name="title_activity_admin">AdminDemo</string>
+    <string name="title_activity_radio">RadioActivity</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="set_system_time">Setup Time:</string>
+    <string name="set_system_date">Set Date:</string>
+    <string name="set_system_dateformat">Set the Date Format:</string>
+    <string name="set_system_upzaixian">Online</string>
+    <string name="set_system_uplixian">Offline</string>
+    <string name="set_system_choose_file_up">Please select the upgrade file</string>
+	<string name="vendor_kandi">Kandi  Technology</string>
+	<string name="vendor_unkown">Unknown manufacturer</string>
+	
+    <!-- wifi界面字符串定义 -->
+    <string name="set_system_wifi_ap">Personal Hotspot</string>
+    <string name="set_system_wifi_wlan"> Wi-Fi</string>
+    <string name="wifi_ap_notice_open">Network sharing is turned on</string>
+    <string name="wifi_ap_notice_close">Open the "vehicle hotspot" to share the Internet</string>
+    <string name="wifi_wifi_notice_open">Current internet connection</string>
+    <string name="wifi_wifi_notice_close">Please turn on WIFI first</string>
+    <string name="wifi_wifi_notice_connecting">Obtain an IP address </string>
+    <string name="wifi_wifi_notice_connected">Connection</string>
+    <string name="wifi_wifi_notice_notconnect">Disconnect</string>
+    <string name="wifi_hotspot_readme">It can be found now.\n other users can find your shared network through "Wireless LAN".</string>
+
+    <!-- wifi网络信息查看界面字符定义 -->
+    <string name="scan_wifi_ignore">Omit</string>
+    <string name="scan_wifi_back">Return</string>
+    <!-- wifi密码设置界面字符定义 -->
+    <string name="password_wifi_confirm">Confirm</string>
+    <string name="password_wifi_cancel">Cancel</string>
+
+    <!-- 升级文件路径定义 -->
+    <string name="Vwcs_LocalInstallUI_Path">storage/udisk/VwcsApk/Ecoc_Vwcs-Y001.apk</string>
+    <string name="Vwcs_LocalInstallSER_Path">storage/udisk/VwcsApk/Ser_Vwcs-Y001.apk</string>
+    <!-- 车辆设备升级文件路径定义 -->
+    <string name="FirmWare_Path">/storage/udisk/VWCS_App/UpData</string>
+    <string name="Root_Path">/storage/udisk</string>
+    
+    <!-- 保存参数弹窗定义 -->
+    <string name="systemchangeDescription">There are changes in system parameters,\n whether to save this operation or not</string>
+
+    <!-- 密码和升级 -->
+    <string name="manager_info">Admin Inform：</string>
+    <string name="manager">Amin：</string>
+    <string name="manager_pwd">Admin PWD：</string>
+    <string name="device_upgrade">Equipment upgrade：</string>
+    <string name="vendor_type">Manufacturer Information：</string>
+    <string name="software_version">Software Version：</string>
+    <string name="hardware_version">Hardware Version：</string>
+    <string name="upgrade_progress">Upgrade progress：</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="upgrade_choose">Upgrade Selection</string>
+    <string name="upgrade_status">Upgrade Status：</string>
+    <string name="manager_pwd_change">APC</string>
+    <string name="input_new_pwd">Please enter a new password:</string>
+    <string name="input_pwd">Input at least 8 characters</string>
+    <string name="input_pwd00">Please enter wireless password</string>
+    <string name="input_name">Please enter a wireless name</string>
+    
+    <!-- 蓝牙 -->
+    <string name="bluetooth_name">Device Name:</string>
+    <string name="bluetooth_ping">Device Password:</string>
+    <string name="input_new_name">New Name：</string>
+    <string name="bluename_change">Password Modification</string>
+    <string name="blueping_change">Name Modification</string>
+    <string name="input_new_ping">New Password：</string>
+    <string name="openbeth_doc">To detect the device, turn on Bluetooth </string>
+    <string name="bluetooth_name_default">K17</string>
+    
+    <string name="wifi_ap_name">Network Name:</string>
+    <string name="wifi_ap_pass">Network Password:</string>
+    <string name="wifi_ap_name_change">Modify Name</string>
+    <string name="wifi_ap_app">Name</string>
+    
+    <string name="blank">""</string>
+    <string name="fg_bcu_battery_check">CADC</string>
+    <string name="fg_bcu_battery_circular">CLT</string>
+    <string name="fg_bcu_battery_smallest">Min.BN</string>
+    <string name="fg_bcu_alarm_value">IAV</string>
+    <string name="fg_bcu_set">AME</string>
+    <string name="fg_bcu_set_all">WXP</string>
+    <string name="fg_bcu_set_biggest">DEVONP</string>
+    <string name="fg_bcu_set_kangdi">Kandi P</string>
+    <string name="fg_bcu_RTC">RTCLPE</string>
+    <string name="fg_bcu_RTC_CAN">RTCLP CANE</string>
+    <string name="fg_bcu_battery_auto">CLACE</string>
+    <string name="fg_bcu_balance">BE</string>
+    <string name="fg_bcu_battery_sign">RCAL</string>
+    <string name="fg_bcu_save">Save</string>
+    <string name="fg_bcu_bad_value">IFV</string>
+    <string name="fg_charger_charge_highest">CMCV</string>
+    <string name="fg_charger_charge_highest2">CMCC</string>
+    <string name="fg_charger_balance">BE</string>
+    <string name="fg_motor_control_highest">Max. Speed Limit</string>
+    <string name="fg_motor_control_highest2">ISTL</string>
+    <string name="fg_motor_control_soc">soc</string>
+    <string name="langalert_layout_ifchange">Whether to switch or not</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="switch_str">Switch</string>
+    <string name="admin_check">Please authenticate with administrator</string>
+    <string name="unopen">Function is not open</string>
+    <string name="clear">Clear</string>
+    <string name="login">Login</string>
+    <string name="temp_incar">In-Car-Temp</string>
+    <string name="PTC">PTC</string>
+    <string name="AC">AC</string>
+    <string name="ON">ON</string>
+    <string name="loading">Device loading…</string>
+    <string name="driveset_powerset">Steering wheel force adjustment</string>
+    <string name="light">Light</string>
+    <string name="normal">Normal</string>
+    <string name="weight">Weight</string>
+    <string name="drive_mode">Driving mode</string>
+    <string name="drivemode_sport">Sports</string>
+    <string name="drivemode_temper">Testiness</string>
+    <string name="drivemode_save">Energy-saving</string>
+    <string name="touch_onoff">Touch control switch</string>
+    <string name="dateformat_set">Date setting format</string>
+    <string name="y_m_d">Y-M-D</string>
+    <string name="m_d_y">M-D-Y</string>
+    <string name="d_m_y">D-M-Y</string>
+    <string name="yyyymmdd">yyyy-MM-dd</string>
+    <string name="auto_time">Set Automatically</string>
+    <string name="hour_24">24-Hour Time</string>
+    <string name="light_set">Brightness Adjustment</string>
+    <string name="auto_light_set">Automatic brightness adjustment switch</string>
+    <string name="language">Language</string>
+    <string name="chinese">Chinese</string>
+    <string name="english">English</string>
+    <string name="sys_volume">System Volume</string>
+    <string name="update_ui">Update Ul Software</string>
+    <string name="update_ser">Update SER Software</string>
+    <string name="offline_upgrade_software">Software offline upgrade</string>
+    <string name="wlan_auto_install">Automatically download and update the installation package under WLAN condition</string>
+    <string name="online_update">Check system upgrade online</string>
+    <string name="check_update">Lookup</string>
+    <string name="no_connect">No connection</string>
+    <string name="network_nearby">Nearby network...</string>
+    <string name="time_set">Setup Time</string>
+    <string name="thisisanetwork">This is a network</string>
+    <string name="ip_addr">IP-address:</string>
+    <string name="netmask">Subnet Mask:</string>
+    <string name="gateway">Gateway:</string>
+    <string name="neglect">Omit</string>
+
+	<!-- java信息 -->
+	<string name="return_file_root">Back to root directory..</string>
+	<string name="return_file_previous">Back to previous layer..</string>
+	<string name="set_data">Set Date</string>
+	<string name="back_service_disable">(Back-end service unavailable)</string>
+	<string name="unit_v">V</string>
+    <string name="unit_a">A</string>
+    <string name="unit_mv">mV</string>
+    <string name="unit_degree">°C</string>
+    <string name="unit_insulation_r">KR</string>
+    <string name="unit_percent">%</string>
+    <string name="unit_second">s</string>
+    <string name="upgrading">Upgrading</string>
+    <string name="upgrade_finish">Upgrade Complete</string>
+    <string name="start_info_error">Startup information error</string>
+    <string name="upgrade_fail">Upgrade failed</string>
+    <string name="upgrade_init">Upgrade initialization</string>
+    <string name="service_version_unknow">Service program version unknown</string>
+    <string name="connecting">Connecting</string>
+    <string name="year">Year</string>
+	<string name="month">Month</string>
+	<string name="day">Day</string>
+	<string name="hour">Hour</string>
+	<string name="min">Min</string>
+	<string name="format24">24</string>
+	<string name="format12">12</string>
+	
+	<!-- toast提示信息 -->
+	<string name="change_success">Modify Successfully</string>
+	<string name="change_fail">Fail to Modify</string>
+	<string name="pwd_format_fail">Password shall be longer than 6 digits</string>
+	<string name="pwd_not_null">Password cannot be empty!</string>
+	<string name="pwd_is_wrong">Password error, please try again</string>
+	<string name="warning_service">Warning: Back-End service not started! (002) </string>
+	<string name="warning_set_error">Setup error!</string>
+	<string name="warning_param_imperfect">Parameter Incompleteness </string>
+	<string name="save_success">Save Successfully</string>
+	<string name="point_hint">Click</string>
+	<string name="count_in">Times To Enter ACERt</string>
+	<string name="count_in_apr">Times To Enter APR</string>
+	<string name="count_in_recovery">Times To Enter factory setting</string>
+	<string name="uuid">uuid:</string>
+	<string name="blue_hardware">Bluetooth Hardware Version:</string>
+	<string name="warning_blue_error">blue Service Exceptions</string>
+	<string name="net_conn_disable">Network Connection Unavailable</string>
+	<string name="blue_conn_success">Bluetooth Connection Successful</string>
+	<string name="blue_conn_fail">Bluetooth connection failed</string>
+	<string name="unable_brightness">Unable to access brightness information</string>
+	
+	<!-- 语音 -->
+	<string name="objfan">Fan</string>
+	<string name="objair">Air Conditioner</string>
+	<string name="refrigeration">Cooling</string>
+	<string name="heating">Heating</string>
+	
+	<!-- 去除中文及特殊字符 -->
+    <string name="number_letter">1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+    
+    <!-- 离线升级 -->
+    <string name="ali_offline_update_new_title">New Update</string>
+    <string name="ali_offline_update_no_title">No Update Package</string>
+    <string name="ali_offline_update_finding_title">Finding Update Package</string>
+    <string name="ali_offline_update_content">Version: %1$s</string>
+    <string name="ali_offline_update_immediately">update</string> 
+
+    <!-- 音量设置 -->
+    <string name="volume_set_up">+</string>
+    <string name="volume_set_down">—</string>
+    
+    <!-- pdf -->
+	<string name="menu_close">Close</string>
+	<string name="menu_goto_page">Jump</string>
+	<string name="menu_zoom">Zoom</string>
+	<string name="menu_nightmode">Night mode/off</string>
+	<string name="dialog_title_goto_page">Jump</string>
+	<string name="button_goto_page">Jump</string>
+	<string name="text_page">Page</string>
+	<string name="error_close">"Close"</string>
+	<string name="password_text">"Enter password"</string>
+	<string name="password_ok">"OK"</string>
+	<string name="password_cancel">"Cancel"</string>
+	<string name="bookmark_invalid_page">"Page number out of range. Valid range: 1-"</string>
+
+	<string name="msg_loading">Loading... Please wait</string>
+	<string name="msg_getting_page_size">"Getting page size %1$d/%2$d"</string>
+	
+	<string name="pdf_path">/sdcard/instructions.pdf</string>
+	<string name="pdf_name">Manual</string>
+	<string name="pdf_K17_name">instructions.pdf</string>
+	<string name="pdf_K17A_name">instructions_geely.pdf</string>
+	<string name="pdf_K17_path">/assets/instructions.pdf</string>
+	<string name="pdf_K17A_path">/assets/instructions_geely.pdf</string>
+	
+	<string name="error_toolong">The length entered(The length entered%1$d)The length entered(CN 2,En 1)</string>
+	<string name="error_type">Please enter English characters</string>
+
+</resources>

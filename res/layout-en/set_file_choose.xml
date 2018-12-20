@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shoots_bg_03"
+        android:id="@+id/mainview" >
+
+        <FrameLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_gravity="center">
+	
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="30dp"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="20dp"
+	                android:background="@null"
+	                android:textSize="32sp"
+	                android:text="@string/set_system_choose_file_up" />
+	        </LinearLayout>
+
+	    </FrameLayout>
+	
+	    <ListView
+	        android:id="@android:id/list"
+	        android:layout_width="match_parent"
+	        android:layout_height="400dp"
+	        android:cacheColorHint="@android:color/transparent"
+	        android:divider="@drawable/set_file_xian"
+	        android:dividerHeight="1dp"
+	        android:fadingEdge="none"
+	        android:listSelector="@android:color/transparent"
+	        android:padding="20dp" />
+	    <Button     
+		    android:id="@+id/buttonConfirm"  
+		    android:layout_width="125dp"    
+		    android:layout_height="fill_parent"    
+		    android:text="@string/password_wifi_confirm" 
+		    android:visibility="gone" 
+		    />
+    </LinearLayout>
+

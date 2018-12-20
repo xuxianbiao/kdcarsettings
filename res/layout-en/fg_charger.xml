@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/insulatorerrorinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cdjzgcddytxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/fg_charger_charge_highest"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/chongdianjizuigaochongdiandianya"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/cdjzgcddytxt"
+            android:background="@drawable/set_edittext_bg"
+            android:hint=""
+            android:inputType="number"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/insulatorerrorinfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cdjzgcddltxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/fg_charger_charge_highest2"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/chongdianjizuigaochongdiandianliu"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/cdjzgcddltxt"
+            android:background="@drawable/set_shoots_control_text_bg_off"
+            android:hint=""
+            android:inputType="number"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/drivelock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/drivemodetxtf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/fg_charger_balance"
+            android:textColor="@color/darkgrey"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/teamBuyBaoDiTog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/drivemodetxtf"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/toggle_selector"
+            android:textColor="@color/white"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/controlnormalbtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:background="@drawable/set_shoots_tap_btn_bg"
+            android:text="@string/fg_bcu_save"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+</LinearLayout>

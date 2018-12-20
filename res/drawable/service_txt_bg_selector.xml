@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@drawable/onekey_txtcolor_press" android:state_pressed="true"/>
+    <item android:color="@drawable/onekey_txtcolor"/>
+
+</selector>

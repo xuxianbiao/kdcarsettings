@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/bgview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shoots_bg_03"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/dateformat_set"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingTop="30dp" >
+
+        <RadioGroup 
+	        android:id="@+id/dateforgroup"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	        <RadioButton
+	            android:id="@+id/datefor1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="20dp"
+	            android:text="@string/y_m_d"
+	            android:textSize="20sp"
+	            style="@style/Style_Radiobutton" />
+
+	        <RadioButton
+	            android:id="@+id/datefor2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="20dp"
+	            android:text="@string/m_d_y"
+	            android:textSize="20sp"
+	            style="@style/Style_Radiobutton" />
+	
+	        <RadioButton
+	            android:id="@+id/datefor3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="20dp"
+	            android:text="@string/d_m_y"
+	            android:textSize="20sp"
+	            style="@style/Style_Radiobutton" />
+	    </RadioGroup>
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/timeset_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/submit_btn_selector"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:text="@string/password_wifi_confirm" />
+
+</LinearLayout>

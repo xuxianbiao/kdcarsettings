@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:background="@drawable/shoots_bg_02_1"
+    android:orientation="vertical"
+    android:id="@+id/bgview"
+     >
+	
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/manager_pwd_change"
+	    android:textSize="30sp"
+	    android:layout_marginTop="40dp"
+	    android:textColor="@color/white" />
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+	    android:orientation="horizontal">
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/input_new_pwd"
+		    android:textSize="20sp"
+	        />
+	    
+	    <EditText
+	        android:id="@+id/pwd_txt"
+	        android:layout_width="260dp"
+	        android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+	        android:background="@drawable/set_shoots_control_text_bg_off"
+	        android:hint=""
+	        android:singleLine="true"
+	        android:textColor="@color/white" />
+	    
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+	    android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/pwdsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/confirm_btn_selector"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/pwdcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/canceled_btn_selector"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

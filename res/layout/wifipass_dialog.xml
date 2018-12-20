@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/shoots_bg_02_1" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/wifipass_dialog_inputpass"
+        android:textSize="32sp"
+        android:textColor="@color/white" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="@string/wifipass_dialog_pass"/>
+        <EditText 
+            android:id="@+id/pswEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:imeOptions="actionDone"
+            android:hint="@string/input_pwd00"
+            android:singleLine="true"
+            android:background="@drawable/set_shoots_control_text_bg_on" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+        <TextView 
+            android:id="@+id/okButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ok"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/common_btn_selector"/>
+        
+        <TextView 
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="60dp"
+            android:text="@string/cancle"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/common_btn_selector"/>
+    </LinearLayout>
+
+</LinearLayout>

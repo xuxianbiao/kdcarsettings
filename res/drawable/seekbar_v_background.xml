@@ -1,0 +1,11 @@
+<layer-list  
+  xmlns:android="http://schemas.android.com/apk/res/android">  
+    <item android:id="@android:id/background">  
+        <nine-patch android:src="@drawable/volume_seekbar_slot" /> 
+    </item>  
+    <item android:id="@android:id/progress">   
+        <clip>  
+            <nine-patch android:src="@drawable/volume_seekbar_progress" />
+        </clip>  
+    </item>  
+</layer-list>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+    
+    <LinearLayout
+        android:layout_width="400dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/titlebar"
+	    android:id="@+id/up_seting"
+	    android:orientation="horizontal" >
+
+		<TextView
+	       android:id="@+id/m_setwifi_btn"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_marginLeft="42dp"
+	       android:text="@string/set_system_wifi_wlan"
+	       android:textColor="@color/scene_dark_blue"
+	       android:textSize="24sp" />
+	   	<TextView
+	       android:id="@+id/m_setap_btn"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_marginLeft="75dp"
+	       android:text="@string/set_system_wifi_ap"
+	       android:textColor="@color/white"
+	       android:textSize="24sp" />
+   
+	</LinearLayout>
+	<!-- 为字体下面添加下划线 -->
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/up_seting"
+	    android:layout_alignLeft="@+id/up_seting"
+	    android:orientation="horizontal" > 
+	   	<ImageView 
+	   	   android:id="@+id/undorline_wifiwlan"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:src="@drawable/set_shoots_control_switch2_lightxian"
+	       android:layout_marginTop="-1dp"
+	       android:layout_marginLeft="21dp"
+	       android:visibility="visible"
+	       />
+	    <ImageView 
+	       android:id="@+id/undorline_wifiap"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:src="@drawable/set_shoots_control_switch2_lightxian"
+	       android:layout_marginTop="-1dp"
+	       android:layout_marginLeft="87dp"
+	       android:visibility="invisible"
+	       />
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_below="@+id/up_seting"
+	    android:layout_alignLeft="@+id/up_seting"
+	    android:orientation="vertical" >   
+		<include 
+		    layout="@layout/set_sysset_wifiset_wlan"
+		    android:id="@+id/free_layout"
+		    android:visibility="visible"
+		    />
+		<include 
+		    layout="@layout/set_sysset_wifiset_ap"
+		    android:id="@+id/ap_layout"
+		    android:visibility="gone"
+		    />
+	</LinearLayout>
+    
+
+        
+</RelativeLayout>

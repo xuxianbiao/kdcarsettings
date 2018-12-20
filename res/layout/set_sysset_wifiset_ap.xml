@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="400dp" >
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ToggleButton
+            android:id="@+id/teamAPOpenTog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/toggle_selector"
+            android:textColor="@color/white"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/controlpowertxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/wifi_ap_notice_close"
+            android:textColor="@color/darkgrey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hotspotdoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/wifi_hotspot_readme"
+            android:textColor="@color/darkgrey"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+       <RelativeLayout
+            android:id="@+id/wifiap_name_layout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/set_wifi_name_txt"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/wifi_ap_name"
+                android:textColor="@color/darkgrey"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:baselineAlignBottom="true"
+                android:src="@drawable/point_style" />
+        </RelativeLayout>
+        
+       <RelativeLayout
+            android:id="@+id/wifiap_pass_layout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/set_wifi_password_txt"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/wifi_ap_pass"
+                android:textColor="@color/darkgrey"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:baselineAlignBottom="true"
+                android:src="@drawable/point_style" />
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/dev_connected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:stretchColumns="*"
+            android:visibility="gone" >
+
+            <TableRow android:layout_margin="0.5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_system_wifi_ap"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/num_connected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_connect"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</RelativeLayout>

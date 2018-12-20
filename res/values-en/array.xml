@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "manager_tabs">
+        <item>Batt</item>
+        <item>BC</item>
+        <item>BCU</item>
+        <item>MC</item>
+        <item>SA</item>
+        <item>SF</item>
+        <item>PWD&amp;UG</item>
+    </string-array>
+    <string-array name = "set_carset_tabs">
+        <item>Drive</item>
+        <!-- <item>车窗 &amp; 车锁</item> -->
+    </string-array>
+    <string-array name = "set_sysset_tabs">
+        <item>Display</item>
+        <!-- <item>声音</item> -->
+        <item>WIFI</item>
+        <item>Bluetooth</item>
+        <item>Upgrade</item>
+        <item>Time Settings</item>
+    </string-array>
+</resources>

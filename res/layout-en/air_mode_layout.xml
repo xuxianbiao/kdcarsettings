@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/air_btn_air_supply_mode_bg"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/btnWinBlowMode1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@null"
+        android:src="@drawable/air_btn_airmode_head_selector" />
+    
+    <ImageButton
+        android:id="@+id/btnWinBlowMode2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@null"
+        android:src="@drawable/air_btn_airmode_foot_selector" />
+
+    <ImageButton
+        android:id="@+id/btnWinBlowMode3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@null"
+        android:src="@drawable/air_btn_airmode_head_and_foot_selector" />
+
+    <ImageButton
+        android:id="@+id/btnWinBlowMode4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@null"
+        android:src="@drawable/air_btn_airmode_win_foot_selector" />
+
+    <ImageButton
+        android:id="@+id/btnWinBlowMode5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@null"
+        android:src="@drawable/air_btn_airmode_front_selector" />
+
+    
+</LinearLayout>

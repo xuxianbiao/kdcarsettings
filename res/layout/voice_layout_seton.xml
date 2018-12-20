@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bgview"
+    android:layout_width="400dp"
+    android:layout_height="435dp"
+    android:background="@drawable/volume_bg_02" >
+
+    <FrameLayout
+        android:id="@+id/topframe"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="50dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:src="@drawable/volume_title" />
+
+        <ImageButton
+            android:id="@+id/set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="48dp"
+            android:background="@null"
+            android:src="@drawable/voice_set_btn_selector" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topframe"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/vol"
+                android:layout_width="wrap_content"
+               android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/volume_push_bg" >
+
+                <com.kandi.settings.widgets.VerticalSeekBar
+                    android:id="@+id/verticalSeekBar"
+					android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="-5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="350dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:max="100"
+                    android:maxHeight="350dp"
+                    android:minHeight="350dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/seekbar_v_background"
+                    android:thumb="@drawable/thumb_v"
+                    android:thumbOffset="0dp" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vol"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/voice_bass_btn_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/vol2"
+                android:layout_width="wrap_content"
+               android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/volume_push_bg" >
+
+                <com.kandi.settings.widgets.VerticalSeekBar
+                    android:id="@+id/verticalSeekBar2"
+					android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="-5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="350dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:max="100"
+                    android:maxHeight="350dp"
+                    android:minHeight="350dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/seekbar_v_background"
+                    android:thumb="@drawable/thumb_v"
+                    android:thumbOffset="0dp" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/voice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vol2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/voice_balance_btn_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/vol3"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/volume_push_bg" >
+
+                <com.kandi.settings.widgets.VerticalSeekBar
+                    android:id="@+id/verticalSeekBar3"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="-5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="350dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:max="100"
+                    android:maxHeight="350dp"
+                    android:minHeight="350dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/seekbar_v_background"
+                    android:thumb="@drawable/thumb_v"
+                    android:thumbOffset="0dp" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/voice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vol3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/volume_03_off_l" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

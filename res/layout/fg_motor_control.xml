@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cdjzgcddltxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/fg_motor_control_highest"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/caogaozhuansuxianding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/cdjzgcddltxt"
+            android:background="@drawable/set_edittext_bg"
+            android:hint=""
+            android:inputType="phone"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cdjzgcddltxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/fg_motor_control_highest2"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/taisuzhuanjuxianding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/cdjzgcddltxt2"
+            android:background="@drawable/set_edittext_bg"
+            android:hint=""
+            android:inputType="phone"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cdjzgcddltxt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/fg_motor_control_soc"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/soc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:layout_toRightOf="@+id/cdjzgcddltxt3"
+            android:background="@drawable/set_edittext_bg"
+            android:hint=""
+            android:inputType="number"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/controlnormalbtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/set_shoots_tap_btn_off"
+        android:gravity="center"
+        android:text="@string/fg_bcu_save"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

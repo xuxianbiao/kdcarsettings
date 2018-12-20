@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/txt_size_xl"
+    android:background="@drawable/test_setting_tabs_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_about_vwcs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_driver"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#ffbfbfbf"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/txt_about_systemui"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_systemui"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#ffbfbfbf"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/txt_about_setting"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_carsetting"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#ffbfbfbf"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/txt_about_home"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_home"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#ffbfbfbf"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/txt_about_ringcall"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_ringcall"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#ffbfbfbf"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/txt_about_blue"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_bluetooth"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#ffbfbfbf"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/txt_carvin"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_carvin"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#ffbfbfbf"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/txt_about_os"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_os"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#ffbfbfbf"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/txt_about_hard"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_hardversion"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#ffbfbfbf"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/txt_about_content"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_content"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#ffbfbfbf"
+            android:textSize="16sp" />
+        
+	    <TextView
+	        android:id="@+id/txt_about_pdf"
+	        android:layout_width="match_parent"
+	        android:layout_height="35dp"
+	        android:layout_marginTop="25dp"
+	        android:drawableTop="@drawable/line"
+	        android:drawableBottom="@drawable/line"
+	        android:gravity="center"
+	        android:text="@string/about_pdf_instruction"
+	        android:textColor="#ffbfbfbf"
+	        android:textSize="20sp" 
+	        android:visibility="gone"/>
+	    
+    </LinearLayout>
+
+</ScrollView>

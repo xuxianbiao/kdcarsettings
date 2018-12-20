@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="onekey_txtcolor">#C9C9C9</color>
+    <drawable name="onekey_txtcolor">#C9C9C9</drawable>
+    <drawable name="onekey_txtcolor_press">#7FCADE</drawable>
+    
+    <drawable name="scene_light_gray">#CCCCCC</drawable>
+    <drawable name="translucent">#00000000</drawable>
+   <!--   <style name="tabTextSelect">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+     <style name="tabText">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#A4A7A8</item>
+        <item name="android:background">@null</item>
+    </style> -->
+</resources>

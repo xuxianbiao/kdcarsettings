@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_window" >
+
+    <FrameLayout
+        android:layout_width="580dp"
+        android:layout_height="595dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/hight_setting_tab"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/set_shoots_title_01"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hight_setting_tab_view"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:clickable="true"
+                android:src="@drawable/settings_tab_01_bg" />
+
+            <ImageView
+                android:id="@+id/set_shoots_title_02"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hight_setting_tab_view"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:clickable="true"
+                android:src="@drawable/settings_tab_02_bg" />
+
+            <ImageView
+                android:id="@+id/set_shoots_title_03"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hight_setting_tab_view"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:clickable="true"
+                android:src="@drawable/settings_tab_03_bg" />
+
+            <ImageView
+                android:id="@+id/set_shoots_title_04"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/hight_setting_tab_view"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:clickable="true"
+                android:src="@drawable/settings_tab_04_bg" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hight_setting_tab" >
+        </android.support.v4.view.ViewPager>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/shoots_xian" >
+
+            <ImageView
+                android:id="@+id/switch_tab_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-26dp"
+                android:layout_marginTop="-8dp"
+                android:src="@drawable/shoots_xian_light" />
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

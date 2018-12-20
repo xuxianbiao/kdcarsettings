@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KdCarSettings</string>
+    <string name="version_code">K22_KandiSetting_Ver20180511</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- 一键服务所需文案 -->
+    <string name="onekeynum">4006070000</string>
+    <string name="hotlinenum">服务热线: 400-607-0000</string>
+    <string name="hotlinename">服务热线: </string>
+    <string name="unhotline">当前服务不可用</string>
+    <string name="onekeyrealnum">4006070000</string>
+    <string name="sim_unin">未插入SIM卡</string>
+    <string name="umsimorsignal">无SIM卡或者无信号</string>
+    <string name="othering">对方正在通话中</string>
+    <string name="disconnect">无法接通</string>
+    <string name="noanswer">无人接听</string>
+    <string name="arrearage">欠费停机</string>
+    <string name="callingtime">通话时间：</string>
+    <string name="calling">正在呼叫...</string>
+    <string name="call_end">通话结束</string>
+    <string name="life_service">生活服务</string>
+    <string name="life_service_tip">订酒店、找旅馆订机票</string>
+    <string name="call_service">紧急呼叫</string>
+    <string name="call_service_tip">呼救、110、120、119</string>
+    <string name="car_service">车辆救援</string>
+    <string name="car_service_tip">车辆故障维修、安全维护</string>
+    <string name="takecar_service">拖车服务</string>
+    <string name="takecar_service_tip">车辆故障或没电拖回服务区</string>
+    <string name="car_setting">车辆设置</string>
+    <string name="system_setting">系统设置</string>
+    <string name="manager_setting">管理设置</string>
+    <string name="about">关    于</string>
+    <string name="about_driver">Ser驱动版本:</string>
+    <string name="about_ecoc">ECOC系统版本:</string>
+    <string name="about_systemui">SystemUI版本:</string>
+    <string name="about_carsetting">CarSetting版本:</string>
+    <string name="about_pdf_instruction">系统说明书</string>
+    <string name="about_home">Home版本:</string>
+    <string name="about_ringcall">RingCall版本:</string>
+    <string name="about_bluetooth">蓝牙版本:</string>
+    <string name="about_carvin">车架号:</string>
+    <string name="about_os">Os版本:</string>
+    <string name="about_hardversion">硬件版本:</string>
+    <string name="about_hardprop">sys.kd.hardwareversion</string>
+    <string name="about_v1_5">VWCSY001_VER1.5</string>
+    <string name="about_v1_4">VWCSY001_VER1.4</string>
+    <string name="about_QYv1_5">TEST-KDV</string>
+    <string name="about_QYv1_4">vwcsy001_M_v1_4</string>
+    <string name="about_softversion">软件版本:</string>
+    <string name="about_softprop">sys.kd.softversion</string>
+    <string name="is_recovery">是否恢复出厂设置</string>
+    <string name="about_content">免责声明：在使用康迪电动汽车（以下简称康迪）前，请您务必仔细阅读并透彻理解本声明。您可以选择不使用康迪，但如果您使用康迪，您的使用行为将被视为对本声明的全部内容的认可。</string>
+
+    <string name="wifipass_dialog_inputpass">输入密码</string>
+    <string name="wifipass_dialog_pass">密码</string>
+    
+    <string name="ok">确认</string>
+    <string name="cancle">取消</string>
+    
+    <string name="out_battery_">放电参数:</string>
+    <string name="in_battery_">充电参数:</string>
+    <string name="protect_">保护参数:</string>
+
+    <!-- 充电参数 -->
+    <string name="bcu_charger_lowtemp">充电低温温度</string>
+    <string name="bcu_charger_lowcell">充电低温单体电压</string>
+    <string name="bcu_charger_lowcurr">充电低温电流</string>
+    <string name="bcu_charger_normaltemp">充电常温温度</string>
+    <string name="bcu_charger_normalcell">充电常温单体电压</string>
+    <string name="bcu_charger_normalcurr">充电常温电流</string>
+    <string name="bcu_charger_hightemp">充电高温温度</string>
+    <string name="bcu_charger_highcell">充电高温单体电压</string>
+    <string name="bcu_charger_highcurr">充电高温电流</string>
+    <!-- 保护参数 -->
+    <string name="bcu_reduce_cell">降流单体电压</string>
+    <string name="bcu_charger_stopvol">充电停止总压</string>
+    <string name="bcu_charger_stoptemp">充电停止温度</string>
+    <string name="bcu_charger_stopcurr">充电停止电流</string>
+    <string name="bcu_charger_stopcellvol">充电停止单体电压</string>
+    <string name="bcu_reduce_time">降流延时时间</string>
+    <!-- 放电参数 -->
+    <string name="bcu_discharger_lowtemp">放电低温温度</string>
+    <string name="bcu_discharger_lowcellw">放电报警低温单体</string>
+    <string name="bcu_discharger_lowcelle">放电故障低温单体</string>
+    <string name="bcu_discharger_normaltemp">放电常温温度</string>
+    <string name="bcu_discharger_normalcellw">放电报警常温单体</string>
+    <string name="bcu_discharger_normalcelle">放电故障常温单体</string>
+    <string name="bcu_discharger_hightemp">放电高温温度</string>
+    <string name="bcu_discharger_highcellw">放电报警高温单体</string>
+    <string name="bcu_discharger_highcelle">放电故障高温单体</string>
+
+    <!-- 放电参数 -->
+    <string name="bcu_lowtemp_warring_cell">放电低温报警单体电压</string>
+    <string name="bcu_lowtemp_error_cell">放电低温故障单体电压</string>
+    <string name="bcu_normaltemp_warring_cell">放电常温报警单体电压</string>
+    <string name="bcu_normaltemp_error_cell">放电常温故障单体电压</string>
+    <string name="bcu_hightemp_warring_cell">放电高温报警单体电压</string>
+    <string name="bcu_hightemp_error_cell">放电高温故障单体电压</string>
+
+    <!-- 充电机界面按钮字符定义 -->
+    <string name="charger_high_outvoltage">充电机最高输出电压</string>
+    <string name="charger_high_outcurrent">充电机最高输出电流</string>
+    <string name="charger_balance_enable">充电机均衡使能</string>
+    <string name="charger_para_save">参数保存</string>
+
+    <!-- BCU字符串定义 -->
+    <string name="bcu_rtc_enable">总控RTC使能</string>
+    <string name="bcu_rtc_enable_can">总控RTC模式CAN使能</string>
+    <string name="bcu_balance_enable">bcu均衡使能</string>
+    <string name="bcu_auto_checkloop">总控自动电流环校准</string>
+    <string name="bcu_clear_relay">继电器粘连清除</string>
+    <string name="bcu_relay_check_time">电池继电器粘连检测周期</string>
+    <string name="bcu_loop_mode">电流环类型</string>
+    <string name="bcu_min_battery">最小电池数</string>
+    <string name="bcu_leak_warring">绝缘报警</string>
+    <string name="bcu_leak_error">绝缘故障</string>
+    <!-- togglebotton 字符定义 -->
+    <string name="toggle_on">打开</string>
+    <string name="toggle_off">关闭</string>
+    <!-- 协议使能 -->
+    <string name="protocol_dayou">大有协议</string>
+    <string name="protocol_wanxiang">万向协议</string>
+    <string name="protocol_kangdi">康迪协议</string>
+
+    <!-- 电机控制器界面按钮字符定义 -->
+    <string name="motor_high_speed">最高转速</string>
+    <string name="motor_high_nm">最高扭矩</string>
+
+    <!-- 升级界面字符定义 -->
+    <string name="updata_start">升级启动</string>
+    <string name="updata_stop">升级停止</string>
+    <string name="updata_file">升级文件</string>
+    <string name="vendor_info">厂商信息</string>
+    <string name="hard_info">硬件版本</string>
+    <string name="soft_info">软件版本</string>
+    <string name="up_status">升级状态</string>
+    <string name="up_process">升级进度</string>
+    <string name="title_activity_admin">AdminDemo</string>
+    <string name="title_activity_radio">RadioActivity</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="set_system_time">设置时间:</string>
+    <string name="set_system_date">设置日期:</string>
+    <string name="set_system_dateformat">设置日期格式:</string>
+    <string name="set_system_upzaixian">在线升级</string>
+    <string name="set_system_uplixian">离线升级</string>
+    <string name="set_system_choose_file_up">请选择升级文件</string>
+	<string name="vendor_kandi">康迪科技</string>
+	<string name="vendor_unkown">未知厂家</string>
+	
+    <!-- wifi界面字符串定义 -->
+    <string name="set_system_wifi_ap">个人热点</string>
+    <string name="set_system_wifi_wlan">无线WIFI</string>
+    <string name="wifi_ap_notice_open">网络共享已开启</string>
+    <string name="wifi_ap_notice_close">打开“本车热点”共享互联网</string>
+    <string name="wifi_wifi_notice_open">当前连接网络</string>
+    <string name="wifi_wifi_notice_close">请先开启Wifi</string>
+    <string name="wifi_wifi_notice_connecting">获取IP地址</string>
+    <string name="wifi_wifi_notice_connected">连接</string>
+    <string name="wifi_wifi_notice_notconnect">断开</string>
+    <string name="wifi_hotspot_readme">现在可被发现。\n其他用户可以通过“无线局域网”查找您的共享网络。</string>
+
+    <!-- wifi网络信息查看界面字符定义 -->
+    <string name="scan_wifi_ignore">忽略此网络</string>
+    <string name="scan_wifi_back">返回</string>
+    <!-- wifi密码设置界面字符定义 -->
+    <string name="password_wifi_confirm">确定</string>
+    <string name="password_wifi_cancel">取消</string>
+
+    <!-- 升级文件路径定义 -->
+    <string name="Vwcs_LocalInstallUI_Path">storage/udisk/VwcsApk/Ecoc_Vwcs-Y001.apk</string>
+    <string name="Vwcs_LocalInstallSER_Path">storage/udisk/VwcsApk/Ser_Vwcs-Y001.apk</string>
+    <!-- 车辆设备升级文件路径定义 -->
+    <string name="FirmWare_Path">/storage/udisk/VWCS_App/UpData</string>
+    <string name="Root_Path">/storage/udisk</string>
+    
+    <!-- 保存参数弹窗定义 -->
+    <string name="systemchangeDescription">系统参数有变动，\n是否保存本次操作</string>
+
+    <!-- 密码和升级 -->
+    <string name="manager_info">管理信息：</string>
+    <string name="manager">管理员：</string>
+    <string name="manager_pwd">管理密码：</string>
+    <string name="device_upgrade">设备升级：</string>
+    <string name="vendor_type">厂商信息：</string>
+    <string name="software_version">软件版本：</string>
+    <string name="hardware_version">硬件版本：</string>
+    <string name="upgrade_progress">升级进度：</string>
+    <string name="upgrade">升级</string>
+    <string name="upgrade_choose">升级选择</string>
+    <string name="upgrade_status">升级状态：</string>
+    <string name="manager_pwd_change">管理员密码修改</string>
+    <string name="input_new_pwd">请输入新密码:</string>
+    <string name="input_pwd">请输入无线密码(至少8个字符)</string>
+    <string name="input_pwd00">请输入无线密码</string>
+    <string name="input_name">请输入无线名称</string>
+    
+    <!-- 蓝牙 -->
+    <string name="bluetooth_name">蓝牙设备名称:</string>
+    <string name="bluetooth_ping">蓝牙设备密码:</string>
+    <string name="input_new_name">请输入新名称：</string>
+    <string name="bluename_change">蓝牙名称修改</string>
+    <string name="blueping_change">蓝牙密码修改:</string>
+    <string name="input_new_ping">请输入新密码：</string>
+    <string name="openbeth_doc">要检测设备，请打开蓝牙功能</string>
+    <string name="bluetooth_name_default">K17</string>
+    
+    <string name="wifi_ap_name">网络名称:</string>
+    <string name="wifi_ap_pass">网络密码:</string>
+    <string name="wifi_ap_name_change">修改名称</string>
+    <string name="wifi_ap_app">名称</string>
+    
+    <string name="blank">""</string>
+    <string name="fg_bcu_battery_check">电池粘连检测周期</string>
+    <string name="fg_bcu_battery_circular">电流环选型</string>
+    <string name="fg_bcu_battery_smallest">最小电池数目</string>
+    <string name="fg_bcu_alarm_value">绝缘报警值</string>
+    <string name="fg_bcu_set">协议使能</string>
+    <string name="fg_bcu_set_all">万向协议</string>
+    <string name="fg_bcu_set_biggest">大有协议</string>
+    <string name="fg_bcu_set_kangdi">康迪协议</string>
+    <string name="fg_bcu_RTC">RTC低功耗使能</string>
+    <string name="fg_bcu_RTC_CAN">RTC低功耗CAN使能</string>
+    <string name="fg_bcu_battery_auto">电流环自动校准使能</string>
+    <string name="fg_bcu_balance">均衡使能</string>
+    <string name="fg_bcu_battery_sign">清除电池粘连标志</string>
+    <string name="fg_bcu_save">保存</string>
+    <string name="fg_bcu_bad_value">绝缘故障值</string>
+    <string name="fg_charger_charge_highest">充电机最高充电电压</string>
+    <string name="fg_charger_charge_highest2">充电机最高充电电流</string>
+    <string name="fg_charger_balance">均衡使能</string>
+    <string name="fg_motor_control_highest">最高转速限定</string>
+    <string name="fg_motor_control_highest2">怠速转矩限定</string>
+    <string name="fg_motor_control_soc">soc</string>
+    <string name="langalert_layout_ifchange">是否切换</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="switch_str">切换</string>
+    <string name="admin_check">请进行管理员身份验证</string>
+    <string name="unopen">功能暂未开放</string>
+    <string name="clear">清除</string>
+    <string name="login">登录</string>
+    <string name="temp_incar">车内温度</string>
+    <string name="PTC">PTC</string>
+    <string name="AC">AC</string>
+    <string name="ON">ON</string>
+    <string name="loading">设备加载中...</string>
+    <string name="driveset_powerset">方向盘力度调节</string>
+    <string name="light">轻</string>
+    <string name="normal">正常</string>
+    <string name="weight">重</string>
+    <string name="drive_mode">行车模式</string>
+    <string name="drivemode_sport">运动</string>
+    <string name="drivemode_temper">暴躁</string>
+    <string name="drivemode_save">节能</string>
+    <string name="touch_onoff">触摸控制开关</string>
+    <string name="dateformat_set">设置日期格式</string>
+    <string name="y_m_d">年-月-日</string>
+    <string name="m_d_y">月-日-年</string>
+    <string name="d_m_y">日-月-年</string>
+    <string name="yyyymmdd">yyyy-MM-dd</string>
+    <string name="auto_time">自动确定时间(网络时间)</string>
+    <string name="hour_24">使用24小时制</string>
+    <string name="light_set">亮度调节</string>
+    <string name="auto_light_set">自动亮度调节开关</string>
+    <string name="language">语言</string>
+    <string name="chinese">中文</string>
+    <string name="english">英文</string>
+    <string name="sys_volume">系统音量</string>
+    <string name="update_ui">更新UI软件</string>
+    <string name="update_ser">更新SER软件</string>
+    <string name="offline_upgrade_software">离线升级软件</string>
+    <string name="wlan_auto_install">WLAN环境下自动下载更新安装包</string>
+    <string name="online_update">在线系统更新检查</string>
+    <string name="check_update">升级查找</string>
+    <string name="no_connect">无连接</string>
+    <string name="network_nearby">附近网络...</string>
+    <string name="time_set">设置时间</string>
+    <string name="thisisanetwork">这是一个网络</string>
+    <string name="ip_addr">IP地址:</string>
+    <string name="netmask">子网掩码:</string>
+    <string name="gateway">网关:</string>
+    <string name="neglect">忽略此网络</string>
+
+	<!-- java信息 -->
+	<string name="return_file_root">返回根目录..</string>
+	<string name="return_file_previous">返回上一层..</string>
+	<string name="set_data">设置日期</string>
+	<string name="back_service_disable">(后台服务不可用)</string>
+	<string name="unit_v">V</string>
+    <string name="unit_a">A</string>
+    <string name="unit_mv">mV</string>
+    <string name="unit_degree">°C</string>
+    <string name="unit_insulation_r">KR</string>
+    <string name="unit_percent">%</string>
+    <string name="unit_second">s</string>
+    <string name="upgrading">升级中</string>
+    <string name="upgrade_finish">升级完成</string>
+    <string name="start_info_error">启动信息错误</string>
+    <string name="upgrade_fail">升级失败</string>
+    <string name="upgrade_init">升级初始化</string>
+    <string name="service_version_unknow">服务程序版本未知</string>
+    <string name="connecting">正在连接中</string>
+    <string name="year">年</string>
+	<string name="month">月</string>
+	<string name="day">日</string>
+	<string name="hour">时</string>
+	<string name="min">分</string>
+	<string name="format24">24</string>
+	<string name="format12">12</string>
+	
+	<!-- toast提示信息 -->
+	<string name="change_success">修改成功</string>
+	<string name="change_fail">修改失败</string>
+	<string name="pwd_format_fail">密码应大于6位</string>
+	<string name="pwd_not_null">密码不能为空!</string>
+	<string name="pwd_is_wrong">密码错误!请重试</string>
+	<string name="warning_service">警告：后台服务未启动!(002)</string>
+	<string name="warning_set_error">设置错误！</string>
+	<string name="warning_param_imperfect">参数不完整</string>
+	<string name="save_success">保存成功</string>
+	<string name="point_hint">点击</string>
+	<string name="count_in">次后进入ACER</string>
+	<string name="count_in_apr">次后进入APR</string>
+	<string name="count_in_recovery">次后进入出厂设置</string>
+	<string name="uuid">uuid:</string>
+	<string name="blue_hardware">蓝牙硬件版本:</string>
+	<string name="warning_blue_error">blue服务异常</string>
+	<string name="net_conn_disable">网络连接不可用</string>
+	<string name="blue_conn_success">蓝牙连接成功</string>
+	<string name="blue_conn_fail">蓝牙连接失败</string>
+	<string name="unable_brightness">无法获取亮度</string>
+	
+	<!-- 语音 -->
+	<string name="objfan">风扇</string>
+	<string name="objair">空调</string>
+	<string name="refrigeration">制冷</string>
+	<string name="heating">制热</string>
+	
+	<!-- 去除中文及特殊字符 -->
+    <string name="number_letter">1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+    
+    <!-- 离线升级 -->
+    <string name="ali_offline_update_new_title">已检测到新版本, 是否更新?</string>
+    <string name="ali_offline_update_no_title">没有检测到新版本</string>
+    <string name="ali_offline_update_finding_title">正在检查新版本</string>
+    <string name="ali_offline_update_content">版本号: %1$s</string>
+    <string name="ali_offline_update_immediately">立即更新</string>
+
+    <!-- 音量设置 -->
+    <string name="volume_set_up">+</string>
+    <string name="volume_set_down">—</string>
+    
+    <!-- pdf -->
+	<string name="menu_close">关闭</string>
+	<string name="menu_goto_page">跳转</string>
+	<string name="menu_zoom">Zoom</string>
+	<string name="menu_nightmode">夜间模式/关</string>
+	<string name="dialog_title_goto_page">跳转</string>
+	<string name="button_goto_page">跳转</string>
+	<string name="text_page">页</string>
+	<string name="error_close">关闭</string>
+	<string name="password_text">确认密码</string>
+	<string name="password_ok">确认</string>
+	<string name="password_cancel">取消</string>
+	<string name="bookmark_invalid_page">"页数超出范围. 取值范围为: 1-"</string>
+
+	<string name="msg_loading">加载中... 请等待</string>
+	<string name="msg_getting_page_size">"获取总页数中 %1$d/%2$d"</string>
+	
+	<string name="pdf_path">/sdcard/instructions.pdf</string>
+	<string name="pdf_name">说明书</string>
+	<string name="pdf_K17_name">instructions.pdf</string>
+	<string name="pdf_K17A_name">instructions_geely.pdf</string>
+	<string name="pdf_K17_path">/assets/instructions.pdf</string>
+	<string name="pdf_K17A_path">/assets/instructions_geely.pdf</string>
+	
+	<string name="error_toolong">输入的长度(当前%1$d)过长(中2,英1)</string>
+	<string name="error_type">请输入英文字符</string>
+
+</resources>

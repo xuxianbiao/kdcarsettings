@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainview"
+    android:layout_width="wrap_content"
+    android:layout_height="435dp"
+    android:background="@drawable/volume_bg_01" >
+
+    <ImageButton
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:src="@drawable/voice_set_btn_selector" />
+
+    <Button
+        android:id="@+id/volume_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/set"
+        android:text="@string/volume_set_up"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:background="@drawable/volume_set_btn_selector" />
+    
+    <FrameLayout
+        android:id="@+id/volbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/volume_up"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:layout_gravity="center_vertical|center_horizontal" />
+
+        <com.kandi.settings.widgets.VerticalSeekBar
+            android:id="@+id/verticalSeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+
+            android:layout_gravity="center_horizontal"
+            android:max="100"
+            android:maxHeight="230dp"
+            android:minHeight="230dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:progress="100"
+            android:progressDrawable="@drawable/seekbar_v_background"
+            android:thumb="@drawable/thumb_v"
+            android:thumbOffset="0dp" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/volume_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/volbar"
+        android:contentDescription="@null"
+        android:text="@string/volume_set_down"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:background="@drawable/volume_set_btn_selector" />
+    
+    <ImageButton
+        android:id="@+id/voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/volume_down"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:src="@drawable/volume_03_off_l" />
+
+</RelativeLayout>

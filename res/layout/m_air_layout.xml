@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/mainview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/air_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="450dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="38px"
+                android:layout_alignLeft="@+id/imageAirIconSet"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="48dp" >
+
+                <ImageView
+                    android:id="@+id/imageAirIconFan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/air_mianban_icon_fan" />
+
+                <ImageView
+                    android:id="@+id/imageAirIconAC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/air_mianban_icon_cooling" />
+
+                <ImageView
+                    android:id="@+id/imageAirIconPTC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/air_mianban_icon_heating" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textInternalTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="60dp"
+                android:text="@string/temp_incar"
+                android:textColor="@color/darkgrey"
+                android:textSize="18sp" />
+
+            <com.kandi.settings.widgets.AirNumberView
+                android:id="@+id/anv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textInternalTemp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginRight="150dp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="610dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp" >
+
+            
+            <LinearLayout  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                  <FrameLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            <ImageButton
+                android:id="@+id/btnPtcPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:src="@drawable/air_btn_ptc_selector" />
+           
+                 
+            <ImageView 
+                android:id="@+id/iv_ptc_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:src="@drawable/air_btn_light"
+                />
+             <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:gravity="center"
+                android:focusable="false"
+                android:textColor="@color/grey3"
+                android:textSize="20sp"
+                android:text="@string/PTC"
+                />
+                
+            </FrameLayout>
+            </LinearLayout>   
+            
+            
+             <LinearLayout  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                  android:layout_marginLeft="30dp"
+                android:layout_marginTop="170dp"
+                >
+                  <FrameLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >   
+            <ImageButton
+                android:id="@+id/btnAcPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@null"
+                android:src="@drawable/air_btn_ac_selector" />
+               <ImageView 
+                   android:id="@+id/iv_ac_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:visibility="invisible"
+                android:src="@drawable/air_btn_light"
+                android:layout_marginLeft="-30dp"
+                />
+             <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginLeft="-18dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:textColor="@color/grey3"
+                android:textSize="20sp"
+                android:text="@string/AC"
+                />
+</FrameLayout>
+</LinearLayout>
+
+             
+              <LinearLayout  
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                 android:layout_gravity="right"
+                android:orientation="vertical"
+                >
+                  <FrameLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            <ImageButton
+                android:id="@+id/btnWindPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/air_btn_power_selector" />
+           
+   			<ImageView 
+   			    android:id="@+id/iv_on_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:visibility="invisible"
+                android:src="@drawable/air_btn_light"
+                android:layout_marginLeft="-30dp"
+                />
+             <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginLeft="-15dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:textSize="20sp"
+                 android:textColor="@color/grey3"
+                android:text="@string/ON"
+                />
+            
+            </FrameLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="100dp" >
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/air_tiaojie_layout" />
+
+                <ImageButton
+                    android:id="@+id/imageDisableMaskTempWheel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/air_disabled_shade_01"
+                    android:visibility="visible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="100dp" >
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/air_fengshan_layout" />
+
+                <ImageButton
+                    android:id="@+id/imageDisableMaskWindWheel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/air_disabled_shade_01"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="310dp" >
+
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/air_mode_layout" />
+
+                <ImageButton
+                    android:id="@+id/imageDisableMaskWindMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:background="@null"
+                    android:src="@drawable/air_disabled_shade_02"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="-17dp" >
+
+                <ImageButton
+                    android:id="@+id/btnAirExternalCycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/air_btn_cycle_external_circulation_selector" />
+
+                <ImageButton
+                    android:id="@+id/imageDisableMaskAirExternalCycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:background="@null"
+                    android:src="@drawable/air_disabled_shade_04"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="250dp" >
+
+                <ImageButton
+                    android:id="@+id/btnAirInternalCycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/air_btn_cycle_internal_circulation_selector" />
+
+                <ImageButton
+                    android:id="@+id/imageDisableMaskAirInternalCycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:background="@null"
+                    android:src="@drawable/air_disabled_shade_04"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+	    android:id="@+id/loadingView"
+	    android:layout_width="610dp"
+	    android:layout_height="640dp"
+	    android:layout_centerInParent="true"
+	    android:visibility="gone"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+	    android:background="@drawable/air_progress_shadow_bg"
+	    android:clickable="true" >
+
+	    <ProgressBar
+	        android:id="@+id/pbar"
+	        style="@style/custProgress"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:layout_marginTop="20dp" />
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/pbar"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/loading"
+	        android:textColor="@color/white"
+	        android:textSize="20sp" />
+
+	</RelativeLayout>
+    
+</RelativeLayout>

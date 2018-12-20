@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp" >
+    <RelativeLayout
+        android:id="@+id/wheelsetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/controlpowertxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/driveset_powerset"
+            android:textColor="@color/darkgrey"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/controlpowerinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/controlpowertxt"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/controllightbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/set_shoots_control_btn2_01_off"
+                android:text="@string/light"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/controlnormalbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-2dp"
+                android:layout_toRightOf="@+id/controllightbtn"
+                android:background="@drawable/set_shoots_control_btn3_02_off"
+                android:text="@string/normal"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/controlrightbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-2dp"
+                android:layout_toRightOf="@+id/controlnormalbtn"
+                android:background="@drawable/set_shoots_control_btn2_02_off"
+                android:text="@string/weight"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/modesetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wheelsetting"
+         >
+        
+
+        <TextView
+            android:id="@+id/controlpowertxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/drive_mode"
+            android:textColor="@color/darkgrey"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/controlpowerinfo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/controlpowertxt2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/controlnormalbtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/set_shoots_control_btn2_01_off"
+                android:text="@string/drivemode_save"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="gone" />
+            
+            <Button
+                android:id="@+id/controllightbtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-2dp"
+                android:layout_toRightOf="@+id/controlnormalbtn2"
+                android:background="@drawable/set_shoots_control_btn3_02_off"
+                android:text="@string/drivemode_sport"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/controltemperbtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-2dp"
+                android:layout_toRightOf="@+id/controllightbtn2"
+                android:background="@drawable/set_shoots_tap_btn_off"
+                android:text="@string/drivemode_temper"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+        
+</RelativeLayout>

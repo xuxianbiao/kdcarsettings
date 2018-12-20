@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/air_btn_bg" >
+
+    <ImageButton
+        android:id="@+id/btnTempUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@null"
+        android:src="@drawable/air_up_btn_selector" />
+
+    <ImageButton
+        android:id="@+id/btnTempDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@null"
+        android:src="@drawable/air_bottom_btn_selector" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/air_btn_bg_show_mask"
+         >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/air_btn_bg_show_bg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/air_btn_bg_show_mask"
+            android:visibility="visible" />
+    </FrameLayout>
+    
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <com.kandi.settings.widgets.WheelView
+            android:id="@+id/tempwv"
+            android:layout_width="127dp"
+            android:layout_height="150dp" />
+
+    </FrameLayout>
+
+</FrameLayout>
