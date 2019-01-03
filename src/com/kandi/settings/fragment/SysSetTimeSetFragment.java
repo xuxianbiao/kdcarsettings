@@ -29,7 +29,6 @@ import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.kandi.settings.Configs;
@@ -40,11 +39,10 @@ import com.kandi.settings.dialog.DateTimeDialog;
 import com.kandi.settings.dialog.DialogDismissListener;
 import com.kandi.settings.driver.SystemSettingDriver2;
 import com.kandi.settings.utils.SharedPreferencesUtils;
-import com.kandi.settings.utils.Utils;
 
 public class SysSetTimeSetFragment extends Fragment {
 	SimpleDateFormat timeformate;
-	java.text.DateFormat dateFormat;
+	SimpleDateFormat dateFormat;
 	java.text.DateFormat timestate;
 	
 	//设置日期控件
@@ -114,7 +112,14 @@ public class SysSetTimeSetFragment extends Fragment {
 	}
 	
 	private void initview(View view){
-		dateFormat = android.text.format.DateFormat.getDateFormat(mactivity);
+		String datapattern = ((SimpleDateFormat)android.text.format.DateFormat.getDateFormat(mactivity)).toPattern();
+		if(datapattern.equals("M/d/y")){
+			datapattern = "MM/dd/yyyy";
+		}else if(datapattern.equals("y-M-d")){
+			datapattern = "yyyy-MM-dd";
+		}
+		dateFormat = new SimpleDateFormat(datapattern);
+		
 		set_date_parent = (RelativeLayout)view.findViewById(R.id.set_date_parent);
 
 		set_time_parent = (RelativeLayout)view.findViewById(R.id.set_time_parent);
@@ -360,7 +365,13 @@ public class SysSetTimeSetFragment extends Fragment {
 					String dateStr = sdf.format(date);
 					set_time_txt.setText(getResources().getString(R.string.set_system_time)+" "+dateStr);
 				}
-				dateFormat = android.text.format.DateFormat.getDateFormat(mactivity);
+				String datapattern = ((SimpleDateFormat)android.text.format.DateFormat.getDateFormat(mactivity)).toPattern();
+				if(datapattern.equals("M/d/y")){
+					datapattern = "MM/dd/yyyy";
+				}else if(datapattern.equals("y-M-d")){
+					datapattern = "yyyy-MM-dd";
+				}
+				dateFormat = new SimpleDateFormat(datapattern);
 				String redata = dateFormat.format(date);
 				set_date_txt.setText(getResources().getString(R.string.set_system_date)+" "+redata);
 				set_dateformat_txt.setText(getResources().getString(R.string.set_system_dateformat)+" "+redata);

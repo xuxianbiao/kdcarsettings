@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -50,7 +51,15 @@ public class DateFormatDialog extends Dialog{
 		SimpleDateFormat simpledateformat;
 		simpledateformat = (SimpleDateFormat) dateFormat;
 		String datestr = simpledateformat.toPattern();
-		if("y-M-d".equals(datestr)){
+		if(!TextUtils.isEmpty(datestr) && datestr.contains("/")){
+			datestr = datestr.replaceAll("/", "-");
+		}
+		if("M-d-y".equals(datestr)){
+			datefor1.setChecked(false);
+			datefor2.setChecked(true);
+			datefor3.setChecked(false);
+			temp=sMMDDYYYY;
+		}else if("y-M-d".equals(datestr)){
 			datefor1.setChecked(true);
 			datefor2.setChecked(false);
 			datefor3.setChecked(false);
@@ -59,17 +68,17 @@ public class DateFormatDialog extends Dialog{
 			datefor1.setChecked(true);
 			datefor2.setChecked(false);
 			datefor3.setChecked(false);
-			temp=sYYYYMMDD;
+			temp=datestr;
 		}else if(sMMDDYYYY.equals(datestr)){
 			datefor1.setChecked(false);
 			datefor2.setChecked(true);
 			datefor3.setChecked(false);
-			temp=sYYYYMMDD;
+			temp=datestr;
 		}else if(sDDMMYYYY.equals(datestr)){
 			datefor1.setChecked(false);
 			datefor2.setChecked(false);
 			datefor3.setChecked(true);
-			temp=sDDMMYYYY;
+			temp=datestr;
 		}
 		
 //		Date date = new Date();
